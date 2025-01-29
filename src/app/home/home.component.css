@@ -1,0 +1,173 @@
+
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: white; /* Set body background to white */
+}
+
+header {
+  background-color: white; /* Set header background to white */
+  color: #333; /* Dark text color for contrast */
+  padding: 20px;
+  display: flex; /* Align items horizontally */
+  justify-content: center; /* Center the content horizontally */
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  h1 {
+    margin: 0;
+    font-size: 40px;
+    margin-left: 15px; /* Add space between logo and header text */
+  }
+  .logo {
+    width: 10%; /* Resize the logo */
+  }
+  .clock-icon{
+    width: 37px;
+    height: 37px;
+  }
+  .header-extras {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .header-extras li {
+    display: contents;
+    align-items: center;
+    margin: 0 15px; /* Space between the items */
+  }
+  .clock{
+    justify-content: end;
+  }
+  .header-extras-wrapper {
+    position: absolute;
+    right: 20px; /* Align to the right edge of the header */
+    transform: translateY(-50%); /* Center vertically */
+  }
+  .time{
+    font-weight: 800;
+    margin: 8px;
+  }
+  .gmt{
+    display: block;
+    font-weight: 800;
+    margin: 8px;
+  }
+}
+
+nav {
+  background-color: #ffffff;
+  padding: 10px 0;
+  text-align: center;
+}
+
+nav a {
+  color: #274472;
+  font-weight: 800;
+  text-decoration: none;
+  padding: 10px;
+  font-size: 18px;
+}
+
+.hero {
+  height: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  background-size: cover;
+  background-position: center;
+  animation: slide 15s infinite;
+}
+
+@keyframes slide {
+  0% {
+    background-image: url('/images/hampi3.webp');
+  }
+  33% {
+    background-image: url('/images/munnar1.jpeg');
+  }
+  66% {
+    background-image: url('/images/mysore_palace.jpg');
+  }
+  100% {
+    background-image: url('/images/hampi3.webp');
+  }
+}
+
+.hero h2 {
+  font-size: 48px;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+.section {
+  padding: 50px;
+  background-color: white;
+}
+
+.section h2 {
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.destinations {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.destination-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  padding: 20px;
+  transition: transform 0.3s ease;
+}
+
+.destination-card:hover {
+  transform: translateY(-10px);
+}
+
+.destination-card img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}
+
+.destination-card h3 {
+  font-size: 24px;
+  margin: 15px 0;
+}
+
+.destination-card p {
+  font-size: 16px;
+  color: #555;
+}
+
+footer {
+  background-color: #274472;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer p {
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .destinations {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.about:hover {
+  color: #ffffff; /* Change text color on hover */
+  background-color: #274472; /* Add a subtle background color */
+  border-radius: 5px; /* Rounded corners for hover background */
+}

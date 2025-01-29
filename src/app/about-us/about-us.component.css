@@ -1,0 +1,22 @@
+.carousel{
+height: calc(100vh - 343px);
+  .carousel-images{
+    height: calc(100vh - 343px);
+  }
+}
+.my_profile{
+  width: 30%;
+}
+
+.about{
+  padding: 10px;
+  color: #274472;
+  font-weight: 800;
+  text-decoration: none;
+}
+.about:hover {
+  color: #ffffff; /* Change text color on hover */
+  background-color: #274472; /* Add a subtle background color */
+  border-radius: 5px; /* Rounded corners for hover background */
+}
+

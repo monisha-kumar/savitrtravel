@@ -1,0 +1,394 @@
+/* Service Overview Styling */
+.service-overview {
+  background-color: #f4f7f6; /* Light gray background */
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.service-overview h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #274472;
+  margin-bottom: 20px;
+}
+
+.overview-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px; /* Space between text and image */
+}
+
+.overview-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.overview-image {
+  flex: 1;
+}
+
+.overview-image-content {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .overview-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .overview-image {
+    margin-top: 20px;
+  }
+}
+
+
+/* Packages and Offers Section */
+.packages-offers {
+  padding: 40px 20px;
+  background-color: #f4f7f6; /* Light gray background */
+  margin: 20px 0;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Light shadow for depth */
+}
+
+.packages-offers h2 {
+  text-align: center;
+  font-size: 2rem;
+  color: #274472;
+  margin-bottom: 30px;
+}
+
+.customizable-packages {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+.custom-package-image {
+  flex: 1;
+}
+
+.custom-package-image-content {
+  max-width: 100%;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Image shadow */
+}
+
+.custom-package-text {
+  flex: 1;
+  font-size: 1.2rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+.offer-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.cta-button {
+  padding: 12px 24px;
+  background-color: #274472;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.1rem;
+  margin-top: 20px;
+}
+
+.cta-button:hover {
+  background-color: #3a6ab7;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .customizable-packages {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .custom-package-image {
+    margin-bottom: 20px;
+  }
+
+  .custom-package-text {
+    flex: none;
+  }
+}
+
+.about{
+  padding: 10px;
+  font-weight: 800;
+  color: #274472;
+  font-size: 18px;
+  text-decoration: none;
+}
+.about:hover {
+  color: #ffffff; /* Change text color on hover */
+  background-color: #274472; /* Add a subtle background color */
+  border-radius: 5px; /* Rounded corners for hover background */
+}
+
+/* Container for the pricing table */
+.pricing-table {
+  width: 98%;
+  margin: 30px auto;
+  /*padding: 20px;*/
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Heading styles for the pricing table */
+.pricing-table h2 {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: #274472; /* Blue color for headings */
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/* Column for each pricing section */
+.pricing-column {
+  display: block;
+  padding: 0 40px 40px 40px;
+  vertical-align: top;
+  margin-bottom: 30px;
+  border-radius: 10px;
+  background-color: #f4f4f4;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Column title */
+.pricing-column h3 {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 10px;
+  color: #274472;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+/* Table styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+/* Table Header */
+table th,
+table td {
+  padding: 14px;
+  text-align: center;
+  border: 1px solid #ddd;
+  font-size: 1rem;
+}
+
+/* Header Row Styling */
+table th {
+  background-color: #274472;
+  color: #fff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+/* Table Data Row Styling */
+table td {
+  background-color: #f9f9f9;
+  font-weight: bold;
+  font-style: italic;
+  color: darkslategrey;
+  transition: background-color 0.3s ease;
+}
+
+/* Alternating row colors */
+table tr:nth-child(even) td {
+  background-color: #f1f1f1;
+}
+
+/* Hover effect for rows */
+table tr:hover td {
+  background-color: #e9e9e9;
+  cursor: pointer;
+}
+
+/* Highlighted text within the table */
+table .highlight {
+  color: #274472;
+  font-weight: bold;
+}
+
+/* Responsive Design: For smaller screens */
+@media (max-width: 768px) {
+  .pricing-column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  table {
+    font-size: 0.9rem;
+  }
+
+  table th,
+  table td {
+    padding: 10px;
+  }
+}
+
+
+/*-----------------------------------!**!*/
+
+/* General container */
+.services-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Service Section Titles */
+.services-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 40px;
+  color: #274472;
+}
+
+.section-heading {
+  font-size: 2rem;
+  color: #274472;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Service Overview */
+.intro-text {
+  font-size: 1.2rem;
+  line-height: 1.6;
+  text-align: center;
+  color: #555;
+}
+
+/* Packages and Offers */
+.packages-offers .seasonal-offers,
+.packages-offers .customizable-packages {
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.offer-title {
+  font-size: 1.5rem;
+  color: #274472;
+  margin-bottom: 10px;
+}
+
+.cta-button {
+  background-color: #274472;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 1.1rem;
+}
+
+.cta-button:hover {
+  background-color: #1f3d56;
+}
+
+/* Service Categories */
+.category-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.category-card {
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.category-card .category-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 15px;
+}
+
+.category-title {
+  font-size: 1.5rem;
+  color: #274472;
+  margin-bottom: 10px;
+}
+
+.category-card p {
+  color: #555;
+}
+
+/* Testimonials */
+.testimonials {
+  margin-top: 40px;
+  background-color: #f9f9f9;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 30px;
+}
+
+.testimonial {
+  margin-bottom: 20px;
+  font-size: 1.2rem;
+  color: #555;
+}
+
+.testimonial span {
+  display: block;
+  font-style: italic;
+  color: #274472;
+  margin-top: 5px;
+}
+
+/* Call to Action */
+.cta-section {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.cta-text {
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #274472;
+  margin-bottom: 20px;
+}
+.package{
+  padding-top: 15px;
+}
+.logo1{
+  width: 100px;
+  height: 100px;
+  position: relative;
+  top: 30px;
+  right: 20px;
+}

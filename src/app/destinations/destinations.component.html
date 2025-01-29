@@ -1,0 +1,297 @@
+<script src="js/script.js" defer></script>
+<section class="section">
+  <div class="back-arrow">
+    <a href="javascript:history.back();" title="Go Back" style="display: inline-flex; align-items: center; font-size: 18px;
+  font-weight: bold; color: #0073e6; text-decoration: none; transition: color 0.3s ease; position: relative;top: 36px;left: 36px;">
+      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0073e6" viewBox="0 0 16 16" style="margin-right: 8px;">
+        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l5.147 5.146a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
+      </svg>
+    </a>
+  </div>
+  <div class="heading">
+  <h2 class="colorful-text">Explore Destinations</h2>
+  </div>
+  <nav style="background-color: white">
+    <a class="text-colors" href="/home">Home</a>
+    <a class="text-colors" href="/destinations">Destinations</a>
+    <a class="text-colors" href="/services">Services</a>
+    <a class="text-colors" href="/questions">FAQs</a>
+    <a  class="text-colors" href="/about-us">Contact</a>
+  </nav>
+  <div class="destinations">
+
+    <div class="destination-card">
+      <img src="/images/mysore_palace.jpg" alt="Mysore, Karnataka" />
+      <h3>Mysore, Karnataka</h3>
+      <p>Experience the cultural capital of Karnataka, known for its royal heritage, intricate architecture, and vibrant traditions. Mysore offers a perfect blend of history and charm.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Mysore Palace</li>
+        <li>Chamundi Hill and Chamundeshwari Temple</li>
+        <li>Brindavan Gardens</li>
+        <li>St. Philomena’s Church</li>
+        <li>Railway Museum</li>
+        <li>Karanji Lake</li>
+        <li>Mysore Zoo</li>
+        <li>Bull temple</li>
+        <li>Jaganmohan Palace Art Gallery</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Heritage walks, exploring local markets, enjoying Mysore Dasara festivities, and savoring Mysore Pak.</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+    <div class="destination-card">
+<!--      <a href="">-->
+        <img src="/images/coorg.jpeg" alt="Coorg" />
+        <h3>Coorg, Karnataka</h3>
+        <p>Known for its coffee plantations, misty hills, and serene landscapes, Coorg is a perfect getaway for nature and adventure lovers.</p>
+        <h4>Popular Attractions:</h4>
+        <ul>
+          <li>Abbey Falls</li>
+          <li>Dubare Elephant Camp</li>
+          <li>Raja’s Seat</li>
+          <li>Talacauvery</li>
+        </ul>
+        <h4>Activities to Enjoy:</h4>
+        <ul>
+          <li>Coffee plantation tours, elephant interactions, trekking, river rafting</li>
+        </ul>
+              <button (click)="showContactInfo()">Explore More</button>
+<!--      </a>-->
+    </div>
+
+    <div class="destination-card">
+<!--      <a href="">-->
+        <img src="/images/ooty.jpeg" alt="Ooty" />
+        <h3>Ooty, Tamil Nadu</h3>
+        <p>Ooty, the "Queen of Hill Stations," is famous for its tea gardens, botanical gardens, and Nilgiri Mountain Railway.</p>
+        <h4>Popular Attractions:</h4>
+        <ul>
+          <li>Botanical Gardens</li>
+          <li>Ooty Lake</li>
+          <li>Nilgiri Mountain Railway</li>
+          <li>Dodabetta Peak</li>
+        </ul>
+        <h4>Activities to Enjoy:</h4>
+        <ul>
+          <li>Boating, trekking, visiting tea plantations</li>
+        </ul>
+              <button (click)="showContactInfo()">Explore More</button>
+<!--      </a>-->
+    </div>
+
+    <div class="destination-card">
+<!--      <a href="">-->
+        <img src="/images/pondicherry.jpg" alt="Pondicherry" />
+        <h3>Pondicherry</h3>
+        <p>Pondicherry offers French colonial charm, serene beaches, and a unique blend of Indian and European cultures.</p>
+        <h4>Popular Attractions:</h4>
+        <ul>
+          <li>Promenade Beach</li>
+          <li>Auroville</li>
+          <li>Sri Aurobindo Ashram</li>
+          <li>French Quarter</li>
+        </ul>
+        <h4>Activities to Enjoy:</h4>
+        <ul>
+          <li>Beach walks, yoga, cultural exploration</li>
+        </ul>
+              <button (click)="showContactInfo()">Explore More</button>
+<!--      </a>-->
+    </div>
+
+    <div class="destination-card">
+<!--      <a >-->
+        <img src="/images/hampi.jpg" alt="Hampi" />
+        <h3>Hampi, Karnataka</h3>
+        <p>Hampi is a UNESCO World Heritage Site famous for its ancient ruins, temples, and stunning landscapes along the Tungabhadra River.</p>
+        <h4>Popular Attractions:</h4>
+        <ul>
+          <li>Virupaksha Temple</li>
+          <li>Stone Chariot</li>
+          <li>Vittala Temple</li>
+          <li>Matanga Hill</li>
+        </ul>
+        <h4>Activities to Enjoy:</h4>
+        <ul>
+          <li>Exploring ancient ruins, photography, trekking</li>
+        </ul>
+              <button (click)="showContactInfo()">Explore More</button>
+<!--      </a>-->
+    </div>
+
+    <div class="destination-card">
+<!--      <a>-->
+        <img src="/images/waynad.jpg" alt="Wayanad" />
+        <h3>Wayanad, Kerala</h3>
+        <p>Wayanad is a tranquil district with waterfalls, caves, and wildlife sanctuaries, perfect for adventure and nature lovers.</p>
+        <h4>Popular Attractions:</h4>
+        <ul>
+          <li>Edakkal Caves</li>
+          <li>Soochipara Waterfalls</li>
+          <li>Pookode Lake</li>
+          <li>Wayanad Wildlife Sanctuary</li>
+        </ul>
+        <h4>Activities to Enjoy:</h4>
+        <ul>
+          <li>Trekking, wildlife safari, boating</li>
+        </ul>
+              <button (click)="showContactInfo()">Explore More</button>
+<!--      </a>-->
+    </div>
+    <div class="destination-card">
+      <!--      <a href="">-->
+      <img src="/images/munnar.jpg" alt="Munnar" />
+      <h3>Munnar, Kerala</h3>
+      <p>Discover lush green tea gardens, scenic viewpoints, and tranquil landscapes. Perfect for nature lovers!</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Eravikulam National Park</li>
+        <li>Tea Plantations</li>
+        <li>Mattupetty Dam and Lake</li>
+        <li>Top Station</li>
+        <li>Anamudi Peak</li>
+        <li>Attukal Waterfalls</li>
+        <li>Chinnar Wildlife Sanctuary</li>
+        <li>Kundala Lake</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Nature walks, tea tasting, trekking, wildlife spotting</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+      <!--      </a>-->
+    </div>
+    <div class="destination-card">
+      <img src="/images/agra.jpg" alt="Agra" />
+      <h3>Agra, Uttar Pradesh</h3>
+      <p>Agra is home to the iconic Taj Mahal, one of the Seven Wonders of the World, showcasing Mughal architecture at its finest.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Taj Mahal</li>
+        <li>Agra Fort</li>
+        <li>Fatehpur Sikri</li>
+        <li>Mehtab Bagh</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Heritage walks, photography, shopping for marble handicrafts</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+    <div class="destination-card">
+      <img src="/images/jaipur1.avif" alt="Jaipur" />
+      <h3>Jaipur, Rajasthan</h3>
+      <p>Known as the Pink City, Jaipur is a vibrant destination with palaces, forts, and traditional bazaars.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Hawa Mahal</li>
+        <li>Amber Fort</li>
+        <li>City Palace</li>
+        <li>Jantar Mantar</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Hot air ballooning, elephant rides, traditional shopping, folk performances</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+    <div class="destination-card">
+      <img src="/images/manali.jpeg" alt="Manali" />
+      <h3>Manali, Himachal Pradesh</h3>
+      <p>Set in the Himalayas, Manali is a beautiful hill station offering scenic beauty and thrilling activities.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Rohtang Pass</li>
+        <li>Solang Valley</li>
+        <li>Hadimba Temple</li>
+        <li>Old Manali</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Trekking, paragliding, river rafting, skiing</li>
+      </ul>
+      <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+    <div class="destination-card">
+      <img src="/images/leh.jpeg" alt="Leh Ladakh" />
+      <h3>Leh Ladakh, Jammu & Kashmir</h3>
+      <p>Known for its rugged beauty and dramatic landscapes, Leh Ladakh is a paradise for adventure seekers.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Pangong Lake</li>
+        <li>Nubra Valley</li>
+        <li>Leh Palace</li>
+        <li>Magnetic Hill</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Motorbiking, trekking, camping, exploring monasteries</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+    <div class="destination-card">
+      <img src="/images/varanasi.jpeg" alt="Varanasi" />
+      <h3>Varanasi, Uttar Pradesh</h3>
+      <p>One of the oldest cities in the world, Varanasi is a spiritual hub known for its ghats and temples along the Ganges.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Dashashwamedh Ghat</li>
+        <li>Kashi Vishwanath Temple</li>
+        <li>Sarnath</li>
+        <li>Assi Ghat</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Boat rides, evening aarti, exploring ancient temples, spiritual tours</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+
+    </div>
+
+    <div class="destination-card">
+      <img src="/images/shimla.jpeg" alt="Shimla" />
+      <h3>Shimla, Himachal Pradesh</h3>
+      <p>Shimla, the Queen of Hills, is famous for its pleasant climate, colonial architecture, and scenic beauty.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>The Ridge</li>
+        <li>Mall Road</li>
+        <li>Christ Church</li>
+        <li>Jakhoo Temple</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Shopping, heritage walks, trekking, enjoying snowfall in winters</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+    <div class="destination-card">
+      <img src="/images/amritsar.jpeg" alt="Amritsar" />
+      <h3>Amritsar, Punjab</h3>
+      <p>Home to the Golden Temple, Amritsar is a city rich in Sikh heritage and history.</p>
+      <h4>Popular Attractions:</h4>
+      <ul>
+        <li>Golden Temple</li>
+        <li>Jallianwala Bagh</li>
+        <li>Wagah Border</li>
+        <li>Durgiana Temple</li>
+      </ul>
+      <h4>Activities to Enjoy:</h4>
+      <ul>
+        <li>Temple visits, heritage walks, witnessing the Wagah Border ceremony</li>
+      </ul>
+            <button (click)="showContactInfo()">Explore More</button>
+    </div>
+
+  </div>
+</section>
+<app-modal></app-modal>

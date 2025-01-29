@@ -1,0 +1,48 @@
+
+<!--<div *ngIf="isVisible" class="modal-backdrop">-->
+<!--  <div class="modal-content">-->
+<!--    <div class="modal-header">-->
+<!--      <h2>Savitri Travels</h2>-->
+<!--      <button class="close-button" (click)="hide()">×</button>-->
+<!--    </div>-->
+<!--    <div class="modal-body">-->
+<!--      <p class="message">-->
+<!--        🌟 <strong>Contact Us:</strong><br />-->
+<!--        <strong>Email:</strong> {{ 'info@example.com' }}<br />-->
+<!--        <strong>Phone:</strong> +91-1234567890-->
+<!--      </p>-->
+<!--      <p class="footer-note">-->
+<!--        🚗 Embark on your next adventure with <strong>Savitri Travels</strong>!-->
+<!--      </p>-->
+<!--    </div>-->
+<!--    <div class="modal-footer">-->
+<!--      <button class="primary-button" (click)="hide()">Okay</button>-->
+<!--    </div>-->
+<!--  </div>-->
+<!--</div>-->
+<div *ngIf="isVisible" class="modal-backdrop">
+  <div class="modal-content">
+    <div class="modal-header">
+      <h2><img src="/images/logo1.png" alt="Savitri Travels Logo" class="logo1" /> <span class="highlight">Welcome to Savitri Travels!</span></h2>
+      <button class="close-button" (click)="hide()">×</button>
+    </div>
+    <div class="modal-body">
+      <p>Embark on unforgettable journeys with us and create memories that last a lifetime.</p>
+      <p>
+        📧 <span class="highlight">Email:</span> {{ 'info@example.com' }}<br />
+        📞 <span class="highlight">Phone:</span> +91-1234567890
+      </p>
+      <p>
+        🚗 Whether you need a relaxing getaway, a thrilling adventure, or a quick city escape,
+        we’re here to make your travels hassle-free and enjoyable.
+      </p>
+      <p class="cta"><span class="highlight">💡 Ready to plan your next trip?</span><br />
+        Contact us today and let us craft the perfect itinerary for you!
+      </p>
+    </div>
+    <div class="modal-footer">
+      <button class="primary-button" (click)="hide()">Okay</button>
+    </div>
+  </div>
+</div>
+
