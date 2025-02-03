@@ -25,7 +25,7 @@ export class ServicesComponent {
   constructor(private modalService: ModalService) {}
 
   showContactInfo(): void {
-    const message = "Please contact us at:\nEmail: info@example.com\nPhone: +91-1234567890";
+    const message = "Please contact us at:\nEmail: savitrtravels@gmail.com\nPhone: +91 9591929117";
     this.modalService.setMessage(message);
     if (this.modal) {
       this.modal.show();
