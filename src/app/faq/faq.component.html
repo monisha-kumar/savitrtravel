@@ -1,25 +1,24 @@
 
 <section class="services">
-  <div class="back-arrow">
-  <a href="javascript:history.back();" title="Go Back" style="display: inline-flex; align-items: center; font-size: 18px;
-  font-weight: bold; color: #0073e6; text-decoration: none; transition: color 0.3s ease; position: relative;top: 36px;left: 36px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0073e6" viewBox="0 0 16 16" style="margin-right: 8px;">
-      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l5.147 5.146a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-    </svg>
-  </a>
-    </div>
-  <h2 class="font-size">Our Services</h2>
-  <h2>Your travel needs, answered in style! Explore our services below:</h2>
- <nav style="text-align: center">
-  <a class="about" href="/home">Home</a>
-  <a class="about" href="/destinations">Destinations</a>
-  <a class="about" href="/services">Services</a>
-  <a class="about" href="/questions">FAQs</a>
-  <a class="about" href="/about-us">Contact</a>
-</nav>
+  <div class="uniform">
+    <header class="header">
+      <div class="logo-container">
+        <img class="logo" src="/images/logo1.png" alt="Savitr Travels Logo" />
+        <h1 class="tagline">Your travel needs, answered in style!</h1>
+      </div>
+      <nav class="header-nav">
+        <a href="/home">Home</a>
+        <a href="/destinations">Destinations</a>
+        <a href="/services">Services</a>
+        <a href="/questions">FAQs</a>
+        <a href="/about-us">Contact</a>
+      </nav>
+      <!--    <button class="cta-button" >Plan Your Trip</button>-->
+    </header>
+  </div>
   <!-- General Services Section -->
   <div class="service-block" style="margin-top: 10px;">
-    <img src="/images/Indian-on-map.jpg" alt="General Services" class="service-image" />
+    <img src="/images/sri.jpg" alt="General Services" class="service-image" />
     <div class="service-content">
       <h2 class="faq-h3">General Services</h2>
       <div class="faq-item">
@@ -88,7 +87,7 @@
 
   <!-- Booking Section -->
   <div class="service-block">
-    <img src="/images/contact_us.png" alt="Booking and Payment" class="service-image" />
+    <img src="/images/contact_us.png" style="width: auto;" alt="Booking and Payment" class="service-image" />
     <div class="service-content">
       <h2 class="faq-h3">Booking and Payment</h2>
       <div class="faq-item">
@@ -101,4 +100,17 @@
       </div>
     </div>
   </div>
+  <footer>
+    <p>&copy; Your Journey, Our Priority. All Rights Reserved.</p>
+  </footer>
+  <div class="sticky-footer">
+    <button class="contact-btn whatsapp-btn" (click)="chatOnWhatsApp('+919591929117')">
+      Ask Us on WhatsApp!
+    </button>
+    <button class="contact-btn email-btn" (click)="mailUs()">
+      Drop a Mail – We’re Here!
+    </button>
+  </div>
 </section>
+
+

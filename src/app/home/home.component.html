@@ -7,47 +7,22 @@
 </head>
 <body>
 <div>
-  <header>
-    <img class="logo" src="/images/logo1.png" alt="Logo" />
-<!--    <h1>Your Gateway to the Wonders of South India</h1>-->
-    <div class="header-extras-wrapper">
-    <ul class="header-extras" style="margin-top:20px; display: flex; justify-content: end; list-style: none; padding: 0;">
-      <li class="clock">
-        <img class="clock-icon" src="/images/gmail.png"/>
-        <div class="he-text">
-          <p class="time">Email</p>
-          <span class="gmt">{{ 'k_vijay34@hotmail.com' }}</span>
-        </div>
-      </li>
-      <li class="clock">
-        <img class="clock-icon" src="/images/phone.png"/>
-        <div class="he-text">
-          <p class="time">Mobile</p>
-          <span class="gmt"> <a href="tel:+919591929117" target="_blank" style="color:#333333">+91&nbsp;95919&nbsp;29117</a></span>
-        </div>
-      </li>
-      <li>
-        <img src="https://www.bangalorecitytour.com/images/whatsapp.jpg" class="i-plain" alt="WhatsApp" style="height: 37px;" />
-        <div class="he-text">
-          <p  class="time">WhatsApp</p>
-          <span class="gmt"><a href="https://api.whatsapp.com/send?phone=+919845118222&text=Thank%20you%20for%20showing%20interest%20in%20Savitri%20Travels." target="_blank" style="color:#333333">+91&nbsp;95919&nbsp;29117</a></span>
-        </div>
-      </li>
-      <li>
-        <div class="he-text" style="margin-top:0px;margin-left:20px;">
-        </div>
-      </li>
-    </ul>
+  <header class="header">
+    <div class="logo-container">
+      <img class="logo" src="/images/logo1.png" alt="Savitr Travels Logo" />
+      <h1 class="tagline">Your Gateway to South India's Beauty!</h1>
     </div>
+    <nav class="header-nav">
+      <a href="/home">Home</a>
+      <a href="/destinations">Destinations</a>
+      <a href="/services">Services</a>
+      <a href="/questions">FAQs</a>
+      <a href="/about-us">Contact</a>
+    </nav>
+<!--    <button class="cta-button" >Plan Your Trip</button>-->
   </header>
+
 </div>
-<nav>
-  <a class="about" href="/home">Home</a>
-  <a class="about" href="/destinations">Destinations</a>
-  <a class="about" href="/services">Services</a>
-  <a class="about" href="/questions">FAQs</a>
-  <a class="about" href="/about-us">Contact</a>
-</nav>
 
 <div class="hero">
   <h2>Discover the Beauty of South India</h2>
@@ -90,9 +65,17 @@
     </div>
   </div>
 </section>
-
 <footer>
-  <p>&copy; 2024 Your Journey, Our Priority. All Rights Reserved.</p>
+  <p>&copy; Your Journey, Our Priority. All Rights Reserved.</p>
 </footer>
 </body>
+<div class="sticky-footer">
+  <button class="contact-btn whatsapp-btn" (click)="chatOnWhatsApp('+919591929117')">
+    Ask Us on WhatsApp!
+  </button>
+  <button class="contact-btn email-btn" (click)="mailUs()">
+    Drop a Mail – We’re Here!
+  </button>
+</div>
+
 </html>

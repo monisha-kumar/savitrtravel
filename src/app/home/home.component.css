@@ -6,6 +6,68 @@ body {
   background-color: white; /* Set body background to white */
 }
 
+.header {
+  background: linear-gradient(to right, #274472, #1d3557); /* Subtle gradient */
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 80px; /* Increase size */
+  margin-right: 15px;
+  background: white;
+  border-top-right-radius: 61px !important;
+  border-top-left-radius: 61px !important;
+  border-radius: 10px;
+}
+
+.tagline {
+  font-size: 20px;
+  font-weight: bold;
+  color: #ffcc00; /* Gold color for contrast */
+}
+
+.header-nav {
+  display: flex;
+  gap: 20px;
+}
+
+.header-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.header-nav a:hover {
+  color: #ffcc00;
+}
+
+.cta-button {
+  background-color: #ffcc00;
+  color: #333;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.cta-button:hover {
+  background-color: #ffd700;
+}
+
+
 header {
   background-color: white; /* Set header background to white */
   color: #333; /* Dark text color for contrast */
@@ -58,7 +120,7 @@ header {
 }
 
 nav {
-  background-color: #ffffff;
+  /*background-color: #ffffff;*/
   padding: 10px 0;
   text-align: center;
 }
@@ -135,7 +197,7 @@ nav a {
 
 .destination-card img {
   width: 100%;
-  height: auto;
+  height: calc(100vh - 737px);
   border-radius: 8px;
 }
 
@@ -159,8 +221,58 @@ footer {
 footer p {
   margin: 0;
 }
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center;
+    padding: 10px;
+  }
+
+  .logo-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .logo {
+    width: 60px; /* Reduce logo size */
+    margin-bottom: 10px;
+  }
+
+  .tagline {
+    font-size: 16px; /* Reduce tagline size */
+  }
+
+  .header-nav {
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+  }
+
+  .header-nav a {
+    font-size: 14px; /* Reduce link size */
+    padding: 5px;
+  }
+
+  .cta-button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
 
 @media (max-width: 768px) {
+  .header {
+    /*width: max-content;*/
+    /*height: calc(100vh - 658px);*/
+  }
+    .hero {
+      /*width: max-content;*/
+    }
+      .destination-card{
+        /*width: auto;*/
+      }
+      .section, footer, .hero{
+        /*width: calc(100vh - 30%);*/
+      }
   .destinations {
     flex-direction: column;
     align-items: center;
@@ -171,3 +283,64 @@ footer p {
   background-color: #274472; /* Add a subtle background color */
   border-radius: 5px; /* Rounded corners for hover background */
 }
+.sticky-footer {
+  position: fixed;
+  bottom: 20px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 20px;
+  z-index: 1000;
+}
+
+.contact-btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 10px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.whatsapp-btn {
+  font-weight: 600;
+  background: #228B22FF;;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  left: 20px;
+}
+
+.email-btn {
+  font-weight: 600;
+  background: #00008BFF;
+  color: white;
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.contact-btn:hover {
+  opacity: 0.8;
+}
+@media (max-width: 768px) {
+  .contact-btn {
+    width: fit-content;
+    font-size: 14px; /* Reduce font size */
+    padding: 10px; /* Adjust padding */
+  }
+
+  .email-btn {
+    margin-bottom: 100px;
+    bottom: 10px;
+    left: 10px;
+    right: 10px;
+  }
+  .whatsapp-btn{
+    margin-bottom: 40px;
+    left: 10px;
+    right: 10px;
+  }
+}
+
+

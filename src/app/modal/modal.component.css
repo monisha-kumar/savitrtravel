@@ -186,3 +186,55 @@
   top: -55px;
   right: -13px;
 }
+
+@media (max-width: 768px) {
+  .modal-content {
+    width: 80%; /* Make it smaller */
+    max-width: 350px; /* Set a max-width */
+    padding: 15px; /* Reduce padding */
+  }
+
+  .modal-header h2 {
+    font-size: 18px; /* Decrease font size */
+  }
+
+  .modal-body p {
+    font-size: 14px; /* Reduce text size for better readability */
+  }
+
+  .primary-button {
+    font-size: 14px; /* Make button text smaller */
+    padding: 8px 12px;
+  }
+
+  .logo1 {
+    width: 50px; /* Reduce logo size */
+    height: auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .close-button{
+    display: none;
+  }
+  .modal-backdrop{
+    justify-content: flex-start;
+  }
+  .modal-content {
+    width: 90%; /* Adjust for very small screens */
+    max-width: 300px;
+  }
+
+  .modal-header h2 {
+    font-size: 16px;
+  }
+
+  .modal-body p {
+    font-size: 12px;
+  }
+
+  .primary-button {
+    font-size: 12px;
+    padding: 6px 10px;
+  }
+}

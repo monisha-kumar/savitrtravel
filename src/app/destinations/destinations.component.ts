@@ -15,7 +15,7 @@ export class DestinationsComponent  {
   constructor(private modalService: ModalService) {}
 
   showContactInfo(): void {
-    const message = "Please contact us at:\nEmail: savitrtravels@gmail.com\nPhone: +91 9591929117";
+    const message = "Please contact us at:\nEmail: enquiry@savitrtravels.com\nPhone: +91 9591929117";
     this.modalService.setMessage(message);
     if (this.modal) {
       this.modal.show();
@@ -29,5 +29,16 @@ export class DestinationsComponent  {
     } else {
       document.body.classList.remove('no-scroll');
     }
+  }
+  mailUs() {
+    window.location.href = 'mailto:enquiry@savitrtravels.com';
+  }
+
+  callNow(phoneNumber: string) {
+    window.location.href = `tel:${phoneNumber}`;
+  }
+
+  chatOnWhatsApp(phoneNumber: string) {
+    window.open(`https://api.whatsapp.com/send?phone=${phoneNumber}&text=Hello%2C%20I%20am%20interested%20in%20Savitr%20Travels!`, '_blank');
   }
 }

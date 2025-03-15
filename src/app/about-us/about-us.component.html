@@ -101,38 +101,36 @@
 </head>
 <body>
 
-<header>
-  <h1>Welcome to Our Story</h1>
+<header class="header">
+  <div class="logo-container">
+    <img class="logo" src="/images/logo1.png" alt="Savitr Travels Logo" />
+    <h1>Welcome to Our Story</h1>
+  </div>
+
+  <nav class="header-nav">
+    <a class="about" href="/home">Home</a>
+    <a class="about" href="/destinations">Destinations</a>
+    <a class="about" href="/services">Services</a>
+    <a class="about" href="/questions">FAQs</a>
+    <a class="about" href="/about-us">Contact</a>
+  </nav>
 </header>
-<div class="back-arrow">
-  <a href="javascript:history.back();" title="Go Back" style="display: inline-flex; align-items: center; font-size: 18px;
-  font-weight: bold; color: #0073e6; text-decoration: none; transition: color 0.3s ease; position: relative;top: 36px;left: 36px;">
-    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#0073e6" viewBox="0 0 16 16" style="margin-right: 8px;">
-      <path fill-rule="evenodd" d="M15 8a.5.5 0 0 1-.5.5H2.707l5.147 5.146a.5.5 0 0 1-.708.708l-6-6a.5.5 0 0 1 0-.708l6-6a.5.5 0 1 1 .708.708L2.707 7.5H14.5A.5.5 0 0 1 15 8z"/>
-    </svg>
-  </a>
-</div>
   <div class="about-container">
     <section class="about-header">
       <h1 style="color: #274472">About Us</h1>
       <p>Your trusted travel companions, guiding you to the best destinations across South India.</p>
-      <nav>
+<!--      <nav>-->
 
-        <a class="about" href="/home">Home</a>
-        <a class="about" href="/destinations">Destinations</a>
-        <a class="about" href="/services">Services</a>
-        <a class="about" href="/questions">FAQs</a>
-        <a class="about" href="/about-us">Contact</a>
-      </nav>
+<!--        <a class="about" href="/home">Home</a>-->
+<!--        <a class="about" href="/destinations">Destinations</a>-->
+<!--        <a class="about" href="/services">Services</a>-->
+<!--        <a class="about" href="/questions">FAQs</a>-->
+<!--        <a class="about" href="/about-us">Contact</a>-->
+<!--      </nav>-->
     </section>
 
-  <!--  <section class="carousel">-->
-  <!--    <div class="carousel-images" [style.transform]="'translateX(-' + index * 100 / images.length + '%)'">-->
-  <!--      <img *ngFor="let img of images" [src]="img" alt="carousel image">-->
-  <!--    </div>-->
-  <!--  </section>-->
     <section class="profile-section" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-      <h4 style="font-size: 24px; color: #274472; margin-bottom: 15px;">My Profile</h4>
+      <h4 style="font-size: 24px; color: #274472; margin-bottom: 15px;">Vijay Kumar</h4>
       <img  class="my_profile" src="/images/my_profile.jpg"/>
       <p style="font-size: 16px; line-height: 1.6; color: #333; font-weight: bolder;">
         Hi, I am Vijay, a seasoned professional with 35 years of experience in the travel and transport industry. As a former Transport Manager,
@@ -148,10 +146,31 @@
         and cultural richness. My goal is to make each journey not just a trip, but a cherished experience.
       </p>
     </section>
+    <section class="profile-section" style="margin-top: 30px;background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
+      <h4 style="font-size: 24px; color: #274472; margin-bottom: 15px;">Hari Baskar</h4>
+      <img  class="my_profile" src="/images/hari.jpg"/>
+      <p style="font-size: 16px; line-height: 1.6; color: #333; font-weight: bolder;">
+        As the General Manager of [Savitrtravels], I bring over 11+ years of experience in the Travel and Tourism industry, specializing in strategic planning,
+        operational optimization, and delivering exceptional customer experiences. My passion lies in building businesses that not only achieve financial success
+        but also create unforgettable experiences for travelers.
+      </p>
+      <p style="font-size: 16px; line-height: 1.6; color: #333;font-weight: bolder;">
+        I have successfully led a team of 10+ employees in B2B Inside Sales, increased annual revenue by 25%, and streamlined operations to reduce costs by 10%,
+        all while maintaining the highest standards of service quality.
+      </p>
+      <p style="font-size: 16px; line-height: 1.6; color: #333;font-weight: bolder;">
+        Successfully led a team of 150+ employees, creating a culture of collaboration, innovation, and accountability.
+        Increased annual revenue by 25% through strategic initiatives, market expansion, and customer retention programs.
+        Reduced operational costs by 10% while maintaining exceptional service quality and customer satisfaction.
+        Built Savitrtravels into a recognized brand known for its reliability, innovation, and outstanding customer experiences.
+      </p>
+    </section>
   <section class="contact-details">
     <h3 style="color: #274472;">Get in Touch</h3>
+    <a href="mailto:enquiry@savitrtravels.com">{{ 'Email: enquiry@savitrtravels.com' }}</a>
     <a href="mailto:savitrtravels@gmail.com">{{ 'Email: savitrtravels@gmail.com' }}</a>
-    <a href="tel:+919876543210">Phone: +91 98765 43210</a>
+    <a href="tel:+919629016946 ">Phone: +91 96290 16946</a>
+    <a href="tel:+919591929117 ">Phone: +91 95919 29117</a>
   </section>
 </div>
 
