@@ -21,19 +21,26 @@ height: calc(100vh - 343px);
 }
 
 
-.header {
-  background: linear-gradient(to right, #274472, #1d3557); /* Subtle gradient */
-  color: white;
+header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 15px 30px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background: url(https://www.transparenttextures.com/paper.png), linear-gradient(to right, #8B5E3C, #2C3E50);
+  padding: 15px;
+  color: white;
 }
 
 .logo-container {
   display: flex;
   align-items: center;
+  img{
+    width: 50px !important;
+    margin: 0 15px 0 15px !important;
+  }
+  h1{
+    font-size: 2.2rem;
+    font-weight: 500;
+  }
 }
 
 .logo {
@@ -48,7 +55,6 @@ height: calc(100vh - 343px);
 .tagline {
   font-size: 20px;
   font-weight: bold;
-  color: #ffcc00; /* Gold color for contrast */
 }
 
 .header-nav {
@@ -63,11 +69,6 @@ height: calc(100vh - 343px);
   font-size: 18px;
   transition: color 0.3s;
 }
-
-.header-nav a:hover {
-  color: #ffcc00;
-}
-
 .cta-button {
   background-color: #ffcc00;
   color: #333;
@@ -120,9 +121,11 @@ height: calc(100vh - 343px);
 }
 
 @media (max-width: 768px) {
-  .header {
-    /*width: max-content;*/
-    /*height: calc(100vh - 658px);*/
+  header {
+    display: block;
+  }
+  .header-nav {
+    flex-direction: row;
   }
   .hero {
     width: max-content;
@@ -144,8 +147,60 @@ height: calc(100vh - 343px);
 }
 .contact-details{
   a:hover {
-    background-color: #274472 !important;
+    background-color: #008793 !important;
+    color: #ffffff;
   }
+}
+/* General Styles */
+body {
+  margin-top: 93px !important;
+  font-family: Arial, sans-serif;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  background-color: #274472;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+/* Logo */
+.logo-container {
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: center;
+}
+
+.logo-container img {
+  width: 80px;
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Navigation */
+.header-nav {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  padding: 10px;
+}
+
+/* Menu Links */
+.header-nav a {
+  text-decoration: none;
+  color: white;
+  font-size: 14px;
+  padding: 8px 12px;
+  border-radius: 5px;
+  transition: 0.3s;
 }
 .logo {
   margin-left: 40px;

@@ -3,79 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Savitr Travels</title>
+  <title>Savitr Travels - Explore South India</title>
+  <meta name="description" content="Discover the best travel packages to explore South India's top destinations with Savitr Travels.">
 </head>
+
 <body>
-<div>
-  <header class="header">
-    <div class="logo-container">
-      <img class="logo" src="/images/logo1.png" alt="Savitr Travels Logo" />
-      <h1 class="tagline">Your Gateway to South India's Beauty!</h1>
-    </div>
-    <nav class="header-nav">
-      <a href="/home">Home</a>
-      <a href="/destinations">Destinations</a>
-      <a href="/services">Services</a>
-      <a href="/questions">FAQs</a>
-      <a href="/about-us">Contact</a>
-    </nav>
-<!--    <button class="cta-button" >Plan Your Trip</button>-->
-  </header>
 
-</div>
+<!-- Header -->
+<header class="header">
+  <div class="logo-container">
+    <img class="logo" src="images/logo-vintage.png" alt="Savitr Travels Logo" />
+    <h1 class="tagline">Your Gateway to South India's Beauty!</h1>
+  </div>
+  <nav class="header-nav">
+    <ul>
+      <li><a href="/home">Home</a></li>
+      <li><a href="/destinations">Destinations</a></li>
+      <li><a href="/services">Services</a></li>
+      <li><a href="/questions">FAQs</a></li>
+      <li><a href="/about-us">Contact</a></li>
+    </ul>
+  </nav>
+</header>
 
-<div class="hero">
-  <h2>Discover the Beauty of South India</h2>
-</div>
+<!-- Hero Section -->
+<section class="hero" [ngStyle]="{'background-image': heroBackground}">
+  <div class="hero-overlay"></div>
+  <div class="hero-content">
+    <h2>Discover the Beauty of South India</h2>
+    <p>Experience breathtaking destinations with Savitr Travels</p>
+    <button class="cta-btn" (click)="showContactInfo()">Plan Your Trip</button>
+  </div>
+</section>
 
+<!-- Destinations Section -->
 <section class="section">
   <h2>Top Tourist Destinations in India</h2>
   <div class="destinations">
-    <div class="destination-card">
-      <img src="/images/mysore_palace.jpg" alt="Andaman Islands">
-      <h3>Mysore, Karnataka</h3>
-
-      <p>The Crown Jewel of Karnataka's Royal Heritage.</p>
-    </div>
-    <div class="destination-card">
-      <img src="/images/coorg.jpeg" alt="Coorg">
-      <h3>Coorg, Karnataka</h3>
-      <p>Coorg is known for its coffee plantations, misty hills, waterfalls like Abbey Falls, and serene landscapes perfect for nature lovers.</p>
-    </div>
-    <div class="destination-card">
-      <img src="/images/ooty.jpeg" alt="Ooty">
-      <h3>Ooty, Tamil Nadu</h3>
-      <p>The "Queen of Hill Stations," Ooty is famous for its tea gardens, botanical gardens, and the Nilgiri Mountain Railway.</p>
-    </div>
-    <div class="destination-card">
-      <img src="/images/pondicherry.jpg" alt="Pondicherry">
-      <h3>Pondicherry</h3>
-      <p>Pondicherry offers French colonial charm, serene beaches, and a unique blend of Indian and European cultures.</p>
-    </div>
-    <div class="destination-card">
-      <img src="/images/munnar.jpg" alt="Munnar">
-      <h3>Munnar, Kerala</h3>
-      <p>Munnar is a serene hill station known for its tea gardens, lush green hills, and beautiful viewpoints such as Top Station and Echo Point.</p>
-    </div>
-
-    <div class="destination-card">
-      <img src="/images/hampi.jpg" alt="Hampi">
-      <h3>Hampi, Karnataka</h3>
-      <p>Hampi is a UNESCO World Heritage Site famous for its ancient ruins, temples, and stunning landscapes along the Tungabhadra River.</p>
+    <div class="destination-card" *ngFor="let place of destinations">
+      <img [src]="place.image" [alt]="place.name">
+      <div class="card-content">
+        <h3>{{ place.name }}</h3>
+        <p>{{ place.description }}</p>
+      </div>
     </div>
   </div>
 </section>
+
+<!-- Footer -->
 <footer>
-  <p>&copy; Your Journey, Our Priority. All Rights Reserved.</p>
+  <div class="footer-content">
+    <p>&copy; 2025 Savitr Travels. Your Journey, Our Priority.</p>
+  </div>
 </footer>
-</body>
+
+<!-- Sticky Contact Buttons -->
 <div class="sticky-footer">
+  <div class="tooltip-container">
   <button class="contact-btn whatsapp-btn" (click)="chatOnWhatsApp('+919591929117')">
-    Ask Us on WhatsApp!
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
   </button>
+    <p class="tooltip">Whatsapp</p>
+  </div>
+  <div class="tooltip-container">
   <button class="contact-btn email-btn" (click)="mailUs()">
-    Drop a Mail – We’re Here!
+    <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email">
   </button>
+    <p class="tooltip">Send us an Email</p>
+  </div>
+  <div class="tooltip-container">
+  <a class="contact-btn email-btn" style="display: flex;" href="https://www.instagram.com/savitrtravels/?hl=en" target="_blank">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+  </a>
+    <p class="tooltip">Follow us on Instagram</p>
+  </div>
+  <div class="tooltip-container">
+    <a class="contact-btn review-btn" style="display: flex;" href="https://search.google.com/local/writereview?placeid=ChIJG6W7v9UVrjsRvnQfe5mbzNw" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Review" width="30">
+    </a>
+    <p class="tooltip">Leave a Google Review</p>
+  </div>
 </div>
 
+</body>
 </html>
+<app-modal></app-modal>

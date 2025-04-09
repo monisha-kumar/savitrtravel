@@ -3,182 +3,224 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us</title>
+  <title>About Us - Savitr Travels</title>
   <style>
+    /* General Styles */
     body {
-      font-family: Arial, sans-serif;
+      font-family: 'Arial', sans-serif;
       margin: 0;
       padding: 0;
       background-color: #f4f4f4;
+      color: darkslategrey;
     }
+
+    /* Header */
     header {
-      background-color: #274472;
+      background: url('https://www.transparenttextures.com/paper.png'), linear-gradient(to right, #8B5E3C, #2C3E50);
       color: white;
-      padding: 10px 0;
+      padding: 15px 0;
       text-align: center;
     }
+    .logo-container img {
+      width: 100px;
+      display: block;
+      margin: 0 auto 10px;
+    }
+    .header-nav {
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+      padding-top: 10px;
+    }
+    .header-nav a {
+      text-decoration: none;
+      color: white;
+      font-size: 16px;
+      padding: 8px 15px;
+      border-radius: 5px;
+      transition: 0.3s;
+    }
+    /* About Container */
     .about-container {
       max-width: 1200px;
-      margin: 0 auto;
+      margin: 20px auto;
       padding: 20px;
+      background: white;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
+
+    /* About Header */
     .about-header {
       text-align: center;
-      margin-bottom: 50px;
+      margin-bottom: 40px;
     }
     .about-header h1 {
-      font-size: 3em;
-      margin-bottom: 10px;
+      font-size: 2.5em;
+      color: #008793;
     }
     .about-header p {
       font-size: 1.2em;
       color: #666;
     }
-    .carousel {
-      position: relative;
-      overflow: hidden;
-      border-radius: 10px;
-      width: 100%; /* Ensures the carousel takes full width */
+
+    /* Profile Section */
+    .profile-section {
+      background-color: #f9f9f9;
+      padding: 20px;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      margin-bottom: 30px;
     }
-    .carousel-images {
-      display: flex;
-      transition: transform 0.5s ease-in-out;
-      width: 300%; /* 100% for each image, 3 images = 300% */
+    .profile-section h4 {
+      font-size: 24px;
+      color: #008793;
+      margin-bottom: 15px;
     }
-    .carousel-images img {
-      width: 33.33%; /* Each image takes 1/3 of the container width */
-      border-radius: 10px;
+    .profile-section p {
+      font-size: 16px;
+      line-height: 1.6;
+      color: darkslategrey;
+      font-weight: bold;
     }
-    .arrow {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(255, 255, 255, 0.7);
-      border: none;
+    .profile-section img {
+      width: 150px;
+      height: 150px;
       border-radius: 50%;
-      cursor: pointer;
-      padding: 10px;
-      font-size: 1.5em;
-      color: #4CAF50;
-      z-index: 1000; /* Make sure arrows are on top of images */
+      display: block;
+      margin: 10px auto;
+      border: 4px solid #008793;
     }
-    .arrow.left {
-      left: 10px;
-    }
-    .arrow.right {
-      right: 10px;
-    }
+
+    /* Contact Section */
     .contact-details {
       text-align: center;
-      margin-top: 50px;
+      margin-top: 30px;
+      padding: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     }
     .contact-details h3 {
-      font-size: 1.5em;
-      margin-bottom: 20px;
+      font-size: 1.8em;
+      color: #008793;
     }
     .contact-details a {
       display: inline-block;
       margin: 10px 20px;
       padding: 10px 20px;
-      border: 1px solid #274472;
+      border: 1px solid #008793;
       border-radius: 5px;
-      color: #274472;
+      color: #008793;
       text-decoration: none;
-      transition: background-color 0.3s ease;
+      transition: 0.3s;
     }
-    .contact-details a:hover {
-      background-color: #4CAF50;
-      color: white;
-    }
+    /* Footer */
     footer {
-      background-color: #274472;
+      background: url(https://www.transparenttextures.com/paper.png), linear-gradient(to right, #8B5E3C, #2C3E50);
       color: white;
       padding: 10px;
       text-align: center;
       margin-top: 30px;
     }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .header-nav {
+        flex-direction: row;
+        align-items: center;
+        gap: 10px;
+      }
+      .profile-section {
+        padding: 15px;
+      }
+      .profile-section img {
+        width: 120px;
+        height: 120px;
+      }
+    }
   </style>
 </head>
 <body>
 
-<header class="header">
+<header>
   <div class="logo-container">
-    <img class="logo" src="/images/logo1.png" alt="Savitr Travels Logo" />
+    <img src="images/logo-vintage.png" alt="Savitr Travels Logo">
     <h1>Welcome to Our Story</h1>
   </div>
 
   <nav class="header-nav">
-    <a class="about" href="/home">Home</a>
-    <a class="about" href="/destinations">Destinations</a>
-    <a class="about" href="/services">Services</a>
-    <a class="about" href="/questions">FAQs</a>
-    <a class="about" href="/about-us">Contact</a>
+    <a href="/home">Home</a>
+    <a href="/destinations">Destinations</a>
+    <a href="/services">Services</a>
+    <a href="/questions">FAQs</a>
+    <a href="/about-us">Contact</a>
   </nav>
 </header>
-  <div class="about-container">
-    <section class="about-header">
-      <h1 style="color: #274472">About Us</h1>
-      <p>Your trusted travel companions, guiding you to the best destinations across South India.</p>
-<!--      <nav>-->
 
-<!--        <a class="about" href="/home">Home</a>-->
-<!--        <a class="about" href="/destinations">Destinations</a>-->
-<!--        <a class="about" href="/services">Services</a>-->
-<!--        <a class="about" href="/questions">FAQs</a>-->
-<!--        <a class="about" href="/about-us">Contact</a>-->
-<!--      </nav>-->
-    </section>
+<div class="about-container">
+  <section class="about-header">
+    <h1>About Us</h1>
+    <p>Your trusted travel companions, guiding you to the best destinations across South India.</p>
+  </section>
 
-    <section class="profile-section" style="background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-      <h4 style="font-size: 24px; color: #274472; margin-bottom: 15px;">Vijay Kumar</h4>
-      <img  class="my_profile" src="/images/my_profile.jpg"/>
-      <p style="font-size: 16px; line-height: 1.6; color: #333; font-weight: bolder;">
-        Hi, I am Vijay, a seasoned professional with 35 years of experience in the travel and transport industry. As a former Transport Manager,
-        I have gained extensive knowledge of India’s roadways, tourist destinations, and accommodations. My expertise lies in planning seamless
-        journeys, identifying the best routes, and ensuring travelers experience the beauty of India without hassle.
-      </p>
-      <p style="font-size: 16px; line-height: 1.6; color: #333;font-weight: bolder;">
-        Over the years, I have built a reputation for precision, reliability, and an unmatched understanding of India’s cultural and geographical diversity.
-        From iconic tourist spots to hidden gems, I’ve guided countless journeys that have created lasting memories for travelers.
-      </p>
-      <p style="font-size: 16px; line-height: 1.6; color: #333;font-weight: bolder;">
-        Today, I bring my passion and expertise to <strong>Savitr Travels</strong>, striving to offer every traveler a blend of comfort, adventure,
-        and cultural richness. My goal is to make each journey not just a trip, but a cherished experience.
-      </p>
-    </section>
-    <section class="profile-section" style="margin-top: 30px;background-color: #f9f9f9; padding: 20px; border-radius: 8px; box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);">
-      <h4 style="font-size: 24px; color: #274472; margin-bottom: 15px;">Hari Baskar</h4>
-      <img  class="my_profile" src="/images/hari.jpg"/>
-      <p style="font-size: 16px; line-height: 1.6; color: #333; font-weight: bolder;">
-        As the General Manager of [Savitrtravels], I bring over 11+ years of experience in the Travel and Tourism industry, specializing in strategic planning,
-        operational optimization, and delivering exceptional customer experiences. My passion lies in building businesses that not only achieve financial success
-        but also create unforgettable experiences for travelers.
-      </p>
-      <p style="font-size: 16px; line-height: 1.6; color: #333;font-weight: bolder;">
-        I have successfully led a team of 10+ employees in B2B Inside Sales, increased annual revenue by 25%, and streamlined operations to reduce costs by 10%,
-        all while maintaining the highest standards of service quality.
-      </p>
-      <p style="font-size: 16px; line-height: 1.6; color: #333;font-weight: bolder;">
-        Successfully led a team of 150+ employees, creating a culture of collaboration, innovation, and accountability.
-        Increased annual revenue by 25% through strategic initiatives, market expansion, and customer retention programs.
-        Reduced operational costs by 10% while maintaining exceptional service quality and customer satisfaction.
-        Built Savitrtravels into a recognized brand known for its reliability, innovation, and outstanding customer experiences.
-      </p>
-    </section>
+  <!-- Vijay Kumar -->
+  <section class="profile-section">
+    <h4>Vijay Kumar</h4>
+    <img src="images/my_profile.jpg" alt="Vijay Kumar">
+    <p style="font-size: 16px; line-height: 1.6; color: darkslategrey; font-weight: bolder;">
+      Hi, I am Vijay, a seasoned professional with 35 years of experience in the travel and transport industry. As a former Transport Manager,
+      I have gained extensive knowledge of India’s roadways, tourist destinations, and accommodations. My expertise lies in planning seamless
+      journeys, identifying the best routes, and ensuring travelers experience the beauty of India without hassle.
+    </p>
+    <p style="font-size: 16px; line-height: 1.6; color: darkslategrey;font-weight: bolder;">
+      Over the years, I have built a reputation for precision, reliability, and an unmatched understanding of India’s cultural and geographical diversity.
+      From iconic tourist spots to hidden gems, I’ve guided countless journeys that have created lasting memories for travelers.
+    </p>
+    <p style="font-size: 16px; line-height: 1.6; color: darkslategrey;font-weight: bolder;">
+      Today, I bring my passion and expertise to <strong>Savitr Travels</strong>, striving to offer every traveler a blend of comfort, adventure,
+      and cultural richness. My goal is to make each journey not just a trip, but a cherished experience.
+    </p>
+  </section>
+
+  <!-- Hari Baskar -->
+  <section class="profile-section">
+    <h4>Hari Baskar</h4>
+    <img src="images/hari.jpg" alt="Hari Baskar">
+    <p style="font-size: 16px; line-height: 1.6; color: darkslategrey; font-weight: bolder;">
+      As the General Manager of Savitr Travels, I bring over 11+ years of experience in the Travel and Tourism industry, specializing in strategic planning,
+      operational optimization, and delivering exceptional customer experiences. My passion lies in building businesses that not only achieve financial success
+      but also create unforgettable experiences for travelers.
+    </p>
+    <p style="font-size: 16px; line-height: 1.6; color: darkslategrey;font-weight: bolder;">
+      I have successfully led a team of 10+ employees in B2B Inside Sales, increased annual revenue by 25%, and streamlined operations to reduce costs by 10%,
+      all while maintaining the highest standards of service quality.
+    </p>
+    <p style="font-size: 16px; line-height: 1.6; color: darkslategrey;font-weight: bolder;">
+      Successfully led a team of 150+ employees, creating a culture of collaboration, innovation, and accountability.
+      Increased annual revenue by 25% through strategic initiatives, market expansion, and customer retention programs.
+      Reduced operational costs by 10% while maintaining exceptional service quality and customer satisfaction.
+      Built Savitrtravels into a recognized brand known for its reliability, innovation, and outstanding customer experiences.
+    </p>
+  </section>
   <section class="contact-details">
-    <h3 style="color: #274472;">Get in Touch</h3>
-    <a href="mailto:enquiry@savitrtravels.com">{{ 'Email: enquiry@savitrtravels.com' }}</a>
-    <a href="mailto:savitrtravels@gmail.com">{{ 'Email: savitrtravels@gmail.com' }}</a>
-    <a href="tel:+919629016946 ">Phone: +91 96290 16946</a>
-    <a href="tel:+919591929117 ">Phone: +91 95919 29117</a>
+    <h3>Get in Touch</h3>
+    <a href="mailto:enquiry@savitrtravels.com">Email: {{ 'enquiry@savitrtravels.com' }}</a>
+    <a href="mailto:savitrtravels@gmail.com">Email: {{ 'savitrtravels@gmail.com' }}</a>
+    <a href="tel:+919629016946">Phone: +91 96290 16946</a>
+    <a href="tel:+919591929117">Phone: +91 95919 29117</a>
+    <a href="https://www.instagram.com/savitrtravels/?hl=en" target="_blank">
+      <img style="padding-right: 10px;" src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+      Follow us on Instagram
+    </a>
+    <a class="contact-btn review-btn" href="https://search.google.com/local/writereview?placeid=ChIJG6W7v9UVrjsRvnQfe5mbzNw" target="_blank">
+      <span> Leave a Review </span>
+    </a>
   </section>
 </div>
-
 <footer>
-  <p>© 2024 Your Journey, Our Priority | All rights reserved.</p>
+  <p>© 2025 Your Journey, Our Priority | All rights reserved.</p>
 </footer>
-
-
-
 </body>
+
 </html>

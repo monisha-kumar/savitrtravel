@@ -2,7 +2,7 @@
   <div>
     <header class="header">
       <div class="logo-container">
-        <img class="logo" src="/images/logo1.png" alt="Savitr Travels Logo" />
+        <img class="logo" src="images/logo-vintage.png" alt="Savitr Travels Logo" />
         <h1 class="tagline">Travel Services That Take You Further!</h1>
       </div>
       <nav class="header-nav">
@@ -26,7 +26,7 @@
         </p>
       </div>
       <div class="overview-image">
-        <img src="/images/overview.jpg" alt="Travel Services Image" class="overview-image-content">
+        <img src="images/overview.jpg" alt="Travel Services Image" class="overview-image-content">
       </div>
     </div>
   </section>
@@ -36,7 +36,7 @@
     <!-- Customizable Packages -->
     <div class="customizable-packages">
       <div class="custom-package-image">
-        <img src="/images/calender.jpg" alt="Custom Package Image" class="custom-package-image-content">
+        <img src="images/calender.jpg" alt="Custom Package Image" class="custom-package-image-content">
       </div>
       <div class="custom-package-text">
         <h3 class="offer-title">Create Your Perfect Trip</h3>
@@ -159,89 +159,78 @@
 </div>
 
 <section class="luxury-vehicles">
-  <h2 class="transport">Our Luxury & Special Vehicles</h2>
+  <h2 class="section-title">Our Luxury & Special Vehicles</h2>
   <div class="vehicles-container">
 
-    <div class="vehicle-card" style="width: 55%;">
-      <img src="/images/TT.jpg" alt="Tempo Traveller" class="vehicle-image">
-      <h3 class="transport">Tempo Traveller</h3>
+    <!-- Tempo Traveller -->
+    <div class="vehicle-card">
+      <img src="images/TT.jpg" alt="Tempo Traveller" class="vehicle-image">
+      <h3 class="vehicle-title">Tempo Traveller</h3>
       <p><strong>Capacity:</strong> Up to 12 passengers</p>
       <p><strong>Includes:</strong> Comfortable Reclining Seats, Fully Air-Conditioned Cabin, High-Speed Wi-Fi</p>
       <p><strong>Features:</strong> LED Lighting, Charging Ports, Ample Luggage Space</p>
       <p><strong>Ideal for:</strong> Family Outings, Corporate Trips, Group Tours</p>
-      <button class="cta-button" (click)="showContactInfo()">Book Now</button>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
     </div>
 
-    <div class="vehicle-card" style="width: 55%;">
-      <img src="/images/SUV.jpg" alt="Luxury SUV" class="vehicle-image">
-      <h3 class="transport"> Luxury SUV</h3>
+    <!-- Luxury SUV -->
+    <div class="vehicle-card">
+      <img src="images/SUV.jpg" alt="Luxury SUV" class="vehicle-image">
+      <h3 class="vehicle-title">Luxury SUV</h3>
       <p><strong>Capacity:</strong> Up to 4 passengers</p>
       <p><strong>Includes:</strong> Plush Leather Seats, Fully Air-Conditioned Cabin, High-Speed Wi-Fi</p>
       <p><strong>Features:</strong> LED Ambient Lighting, Charging Ports, Ample Legroom & Luggage Space</p>
       <p><strong>Ideal for:</strong> Business Trips, Airport Transfers, Family Getaways, VIP Travel</p>
-      <button class="cta-button" (click)="showContactInfo()">Book Now</button>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
     </div>
-    <div class="vehicle-card" style="width: 55%;">
-      <img src="/images/fortuner.jpg" alt="Toyota Fortuner" class="vehicle-image">
-      <h3 class="transport">Toyota Fortuner</h3>
+
+    <!-- Toyota Fortuner -->
+    <div class="vehicle-card">
+      <img src="images/fortuner.jpg" alt="Toyota Fortuner" class="vehicle-image">
+      <h3 class="vehicle-title">Toyota Fortuner</h3>
       <p><strong>Capacity:</strong> Up to 7 passengers</p>
       <p><strong>Includes:</strong> Premium Leather Seats, Dual-Zone Climate Control, High-Speed Wi-Fi</p>
       <p><strong>Features:</strong> Advanced Infotainment System, Ambient Lighting, Multiple Charging Ports</p>
       <p><strong>Ideal for:</strong> Long-Distance Travel, Business Trips, Family Vacations, Off-Road Adventures</p>
-      <button class="cta-button" (click)="showContactInfo()">Book Now</button>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
     </div>
 
-
-    <div class="vehicle-card" style="width: 50%;">
-      <img src="/images/sedan.jpg" alt="Luxury Sedan" class="vehicle-image">
-      <h3 class="transport"> Luxury Sedan</h3>
+    <!-- Luxury Sedan -->
+    <div class="vehicle-card">
+      <img src="images/sedan.jpg" alt="Luxury Sedan" class="vehicle-image">
+      <h3 class="vehicle-title">Luxury Sedan</h3>
       <p><strong>Capacity:</strong> Up to 3 passengers</p>
       <p><strong>Includes:</strong> Plush Leather Seats, Fully Air-Conditioned Cabin, High-Speed Wi-Fi</p>
       <p><strong>Features:</strong> Premium Sound System, Ambient Lighting, Charging Ports</p>
       <p><strong>Ideal for:</strong> Business Executives, Airport Transfers, Couples & Solo Travelers</p>
-      <button class="cta-button" (click)="showContactInfo()">Book Now</button>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
     </div>
-
-
-    <!-- Luxury Sedan -->
     <div class="vehicle-card">
-      <img src="/images/lux.jpg" alt="Luxury Toyota HiAce" class="vehicle-image">
-      <h3 class="transport">Luxury Toyota HiAce</h3>
-      <p><strong>Capacity:</strong> Up to 10 passengers</p>
-      <p><strong>Includes:</strong> Plush Leather Seats, Wi-Fi, Climate Control AC, LED TV</p>
-      <p><strong>Features:</strong> Spacious Cabin, Adjustable Reclining Seats, Ample Luggage Space</p>
-      <p><strong>Ideal for:</strong> Business Travel, Family Trips, Airport Transfers</p>
-      <button class="cta-button" (click)="showContactInfo()">Book Now</button>
-    </div>
-
-
-    <!-- Luxury SUV -->
-    <div class="vehicle-card">
-      <img src="/images/blurred_car.jpg" alt="Innova Crysta" class="vehicle-image">
-      <h3 class="transport">Toyota Innova Crysta </h3>
-      <p><strong>Capacity:</strong> Up to 6 passengers</p>
-      <p><strong>Includes:</strong> Premium Leather Interiors, Wi-Fi, Chauffeur, Dual-Zone AC</p>
-      <p><strong>Features:</strong> Captain Seats, Reclining Comfort, Touchscreen Infotainment System</p>
-      <p><strong>Ideal for:</strong> Family Road Trips, Business Travel, Airport Transfers</p>
-      <button class=" cta-button" (click)="showContactInfo()">Book Now</button>
-    </div>
-
-
-    <!-- Tempo Traveller -->
-
-
-    <!-- Premium Coach Bus -->
-    <div class="vehicle-card">
-      <img src="/images/lux_bus.png" alt="Luxury Volvo Coach" class="vehicle-image" style="height: 75%;">
-      <h3 class="transport">Luxury Volvo Coach </h3>
-      <p><strong>Capacity:</strong> Up to 40 passengers</p>
+      <img src="images/lux_bus.png" alt="Luxury Volvo Coach" class="vehicle-image">
+      <h3 class="vehicle-title">Luxury Volvo Coach</h3>
       <p><strong>Includes:</strong> Luxury Recliner Seats, LED Entertainment System, Full Air Conditioning</p>
       <p><strong>Features:</strong> Spacious Interiors, Onboard Wi-Fi, USB Charging Ports, Ambient Lighting</p>
       <p><strong>Ideal for:</strong> Group Tours, Corporate Travel, Wedding Transport, Long-Distance Trips</p>
-      <button class="cta-button" (click)="showContactInfo()">Book Now</button>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
     </div>
-
-
+    <div class="vehicle-card">
+      <img src="images/lux.jpg" alt="Luxury Toyota HiAce" class="vehicle-image">
+      <h3 class="vehicle-title">Luxury Toyota HiAce</h3>
+      <p><strong>Capacity:</strong> Up to 10 passengers</p>
+      <p><strong>Includes:</strong>  Plush Leather Seats, Wi-Fi, Climate Control AC, LED TV</p>
+      <p><strong>Features:</strong>  Spacious Cabin, Adjustable Reclining Seats, Ample Luggage Space</p>
+      <p><strong>Ideal for:</strong> Business Travel, Family Trips, Airport Transfers</p>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
+    </div>
+    <div class="vehicle-card">
+      <img src="images/blurred_car.jpg" alt="Toyota Innova Crysta" class="vehicle-image">
+      <h3 class="vehicle-title">Toyota Innova Crysta</h3>
+      <p><strong>Capacity:</strong>  Up to 6 passengers</p>
+      <p><strong>Includes:</strong>  Premium Leather Interiors, Wi-Fi, Chauffeur, Dual-Zone AC</p>
+      <p><strong>Features:</strong>  Captain Seats, Reclining Comfort, Touchscreen Infotainment System</p>
+      <p><strong>Ideal for:</strong> Family Road Trips, Business Travel, Airport Transfers</p>
+      <button class="cta-button" onclick="showContactInfo()">Book Now</button>
+    </div>
 
   </div>
 </section>
@@ -251,27 +240,27 @@
       <h2 class="section-heading">Explore Our Service Categories</h2>
       <div class="category-grid">
         <div class="category-card">
-          <img src="/images/adventure.jpg" alt="Adventure Tours" class="category-image">
+          <img src="images/adventure.jpg" alt="Adventure Tours" class="category-image">
           <h3 class="category-title">Adventure Tours</h3>
           <p>Adrenaline-pumping outdoor expeditions, mountain treks, and safaris.</p>
         </div>
         <div class="category-card">
-          <img src="/images/liesure.jpg" alt="Leisure Tours" class="category-image">
+          <img src="images/liesure.jpg" alt="Leisure Tours" class="category-image">
           <h3 class="category-title">Leisure Tours</h3>
           <p>Relax and unwind at scenic resorts, serene beaches, and cultural destinations.</p>
         </div>
         <div class="category-card">
-          <img src="/images/business.jpeg" alt="Corporate Travel" class="category-image">
+          <img src="images/business.jpeg" alt="Corporate Travel" class="category-image">
           <h3 class="category-title">Corporate Travel</h3>
           <p>Seamless travel for business trips, meetings, and conferences.</p>
         </div>
         <div class="category-card">
-          <img src="/images/luxury.jpeg" alt="Luxury Travel" class="category-image">
+          <img src="images/luxury.jpeg" alt="Luxury Travel" class="category-image">
           <h3 class="category-title">Luxury Travel</h3>
           <p>Exclusive experiences with luxury stays, private tours, and chauffeur-driven cars.</p>
         </div>
         <div class="category-card">
-          <img src="/images/budget.jpg" alt="Budget-Friendly Travel" class="category-image">
+          <img src="images/budget.jpg" alt="Budget-Friendly Travel" class="category-image">
           <h3 class="category-title">Budget-Friendly Travel</h3>
           <p>Affordable travel options for families, solo travelers, and groups.</p>
         </div>
@@ -299,12 +288,30 @@
     </footer>
   </section>
 </div>
-<!--<div class="sticky-footer">-->
-<!--  <button class="contact-btn whatsapp-btn" (click)="chatOnWhatsApp('+919591929117')">-->
-<!--    Ask Us on WhatsApp!-->
-<!--  </button>-->
-<!--  <button class="contact-btn email-btn" (click)="mailUs()">-->
-<!--    Drop a Mail – We’re Here!-->
-<!--  </button>-->
-<!--</div>-->
+<div class="sticky-footer">
+  <div class="tooltip-container">
+    <button class="contact-btn whatsapp-btn" (click)="chatOnWhatsApp('+919591929117')">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+    </button>
+    <p class="tooltip">Whatsapp</p>
+  </div>
+  <div class="tooltip-container">
+    <button class="contact-btn email-btn" (click)="mailUs()">
+      <img src="https://cdn-icons-png.flaticon.com/512/281/281769.png" alt="Email">
+    </button>
+    <p class="tooltip">Send us an Email</p>
+  </div>
+  <div class="tooltip-container">
+    <a class="contact-btn email-btn" style="display: flex;" href="https://www.instagram.com/savitrtravels/?hl=en" target="_blank">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30">
+    </a>
+    <p class="tooltip">Follow us on Instagram</p>
+  </div>
+  <div class="tooltip-container">
+    <a class="contact-btn review-btn" style="display: flex;" href="https://search.google.com/local/writereview?placeid=ChIJG6W7v9UVrjsRvnQfe5mbzNw" target="_blank">
+      <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Review" width="30">
+    </a>
+    <p class="tooltip">Leave a Google Review</p>
+  </div>
+</div>
 <app-modal></app-modal>

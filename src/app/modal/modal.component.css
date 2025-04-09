@@ -1,99 +1,4 @@
 
-/*!* Modal backdrop to dim the background *!*/
-/*.modal-backdrop {*/
-/*  position: fixed;*/
-/*  top: 0;*/
-/*  left: 0;*/
-/*  width: 100%;*/
-/*  height: 100%;*/
-/*  background: rgba(0, 0, 0, 0.6);*/
-/*  display: flex;*/
-/*  align-items: center;*/
-/*  justify-content: center;*/
-/*  z-index: 1000;*/
-/*}*/
-
-/*!* Modal content box *!*/
-/*.modal-content {*/
-/*  background: white;*/
-/*  border-radius: 12px;*/
-/*  width: 400px;*/
-/*  padding: 20px;*/
-/*  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);*/
-/*  animation: slideIn 0.3s ease-out;*/
-/*}*/
-
-/*!* Modal header *!*/
-/*.modal-header {*/
-/*  display: flex;*/
-/*  justify-content: space-between;*/
-/*  align-items: center;*/
-/*  font-size: 18px;*/
-/*  font-weight: bold;*/
-/*  color: #274472;*/
-/*  border-bottom: 2px solid #274472;*/
-/*  padding-bottom: 10px;*/
-/*}*/
-
-/*!* Close button *!*/
-/*.close-button {*/
-/*  background: none;*/
-/*  border: none;*/
-/*  font-size: 20px;*/
-/*  cursor: pointer;*/
-/*  color: #555;*/
-/*}*/
-
-/*!* Modal body *!*/
-/*.modal-body {*/
-/*  margin: 20px 0;*/
-/*  font-size: 16px;*/
-/*  color: #333;*/
-/*  line-height: 1.6;*/
-/*}*/
-
-/*.message strong {*/
-/*  color: #274472;*/
-/*}*/
-
-/*.footer-note {*/
-/*  margin-top: 15px;*/
-/*  font-size: 14px;*/
-/*  color: #777;*/
-/*  font-style: italic;*/
-/*}*/
-
-/*!* Modal footer *!*/
-/*.modal-footer {*/
-/*  text-align: center;*/
-/*}*/
-
-/*.primary-button {*/
-/*  background: #4caf50;*/
-/*  color: white;*/
-/*  padding: 10px 20px;*/
-/*  border: none;*/
-/*  border-radius: 5px;*/
-/*  cursor: pointer;*/
-/*  font-size: 14px;*/
-/*}*/
-
-/*.primary-button:hover {*/
-/*  background: #45a049;*/
-/*}*/
-
-/*!* Slide-in animation *!*/
-/*@keyframes slideIn {*/
-/*  from {*/
-/*    transform: translateY(-20%);*/
-/*    opacity: 0;*/
-/*  }*/
-/*  to {*/
-/*    transform: translateY(0);*/
-/*    opacity: 1;*/
-/*  }*/
-/*}*/
-
 .modal-backdrop {
   display: flex;
   justify-content: center;
@@ -218,7 +123,7 @@
     display: none;
   }
   .modal-backdrop{
-    justify-content: flex-start;
+    /*justify-content: flex-start;*/
   }
   .modal-content {
     width: 90%; /* Adjust for very small screens */

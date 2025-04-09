@@ -14,9 +14,9 @@ import {NgForOf, NgOptimizedImage} from '@angular/common';
 export class AboutUsComponent {
 
   images = [
-    '/images/hampi.jpg',
-    '/images/munnar.jpg',
-    '/images/pondicherry.jpg'
+    'images/hampi.jpg',
+    'images/munnar.jpg',
+    'images/pondicherry.jpg'
   ];
   index = 0;
 
